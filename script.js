@@ -1,11 +1,9 @@
-
-changeTextBtn = document.querySelector('.btn-change');
-createTextBtn = document.querySelector('.btn-create');
-textEl = document.querySelector('.text');
-var1Changed = document.querySelector('#var1');
-
-
 window.addEventListener('DOMContentLoaded', function () {
+  changeTextBtn = document.querySelector('.btn-change');
+  createTextBtn = document.querySelector('.btn-create');
+  textEl = document.querySelector('.text');
+  var1Changed = document.querySelector('#var1');
+
   createTextBtn.addEventListener("click", function () {
     textEl.insertAdjacentHTML('afterbegin', 
     `<div>
@@ -17,8 +15,7 @@ window.addEventListener('DOMContentLoaded', function () {
     {var5} бежала, {var6} задела, {var4} упало и разбилось.,
     {var1} плачет, {var2} плачет, а {var3} кудахчет:,{speach}
     </div>`);
-})})
-
+})
 var1InputEl = document.querySelector('#var1');
 span1InputEl = document.querySelector('#s1');
 
@@ -27,3 +24,5 @@ changeTextBtn.addEventListener("click", function () {
     span1InputEl.textContent = var1InputEl.target.value;
   })      
   })
+})
+
