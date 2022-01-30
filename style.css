@@ -5,12 +5,12 @@ body {
 }
 
 .text {
-   width: 900px;
-   margin: 90px 0 0 90px;
-   font-family: 'FontName'; 
-   font-size: 40px;
-   color: #552935;
-   display: block;
+    width: 900px;
+    margin: 90px 0 0 90px;
+    font-family: 'FontName';
+    font-size: 40px;
+    color: #552935;
+    display: block;
 }
 
 .hidden {
@@ -21,7 +21,7 @@ body {
     width: auto;
     max-width: 100%;
     min-height: 1000px;
- 
+
 }
 
 .inputs {
@@ -58,37 +58,41 @@ body {
     justify-content: center;
     color: #552935;
     font-size: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'FontName';
 }
+
 .midl-text {
     display: flex;
-   margin-left: 20px;
+    margin-left: 20px;
     color: #552935;
     font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 .btns {
     display: flex;
     justify-content: center;
 }
+
 .btn-create {
-    margin: 50px 150px 0 150px ;
+    margin: 50px 150px 0 150px;
     width: 250px;
     height: 100px;
     font-size: 20px;
     color: #552935;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 .btn-change {
-    margin: 50px 150px 0 150px ;
+    margin: 50px 150px 0 150px;
     width: 250px;
     height: 100px;
     font-size: 20px;
     color: #552935;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 @font-face {
-	font-family: 'FontName'; 
-	src: url(/fonts/16831.ttf); 
+    font-family: 'FontName';
+    src: url(/fonts/16831.ttf);
 }
