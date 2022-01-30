@@ -10,6 +10,7 @@ body {
    font-family: 'FontName'; 
    font-size: 40px;
    color: #552935;
+   display: block;
 }
 
 .hidden {

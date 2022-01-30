@@ -1,30 +1,29 @@
 
 changeTextBtn = document.querySelector('.btn-change');
 createTextBtn = document.querySelector('.btn-create');
+textEl = document.querySelector('.text');
 var1Changed = document.querySelector('#var1');
-console.log(var1Changed)
-const textNode = $('.text');
-
-createTextBtn.addEventListener("click", function () {
-    textNode.html(fairytale.text);
-})
 
 
+window.addEventListener('DOMContentLoaded', function () {
+  createTextBtn.addEventListener("click", function () {
+    textEl.insertAdjacentHTML('afterbegin', 
+    `<div>
+    Жили-были <span id="s1">{var1}</span> да {var2},
+    Была у них {var3},
+    Снесла {var3} {var4}, не простое - золотое,
+    - {var1} бил, бил - не разбил,
+    - {var2} била, била - не разбила,
+    {var5} бежала, {var6} задела, {var4} упало и разбилось.,
+    {var1} плачет, {var2} плачет, а {var3} кудахчет:,{speach}
+    </div>`);
+})})
 
+var1InputEl = document.querySelector('#var1');
+span1InputEl = document.querySelector('#s1');
 
-
-// changeTextBtn.addEventListener("click", function () {
-//     mainText.replace(${var1}, var1Changed)
-// })
-const fairytale = {
-    "text":[
-      "Жили-были {var1} да {var2}",
-      "Была у них {var3}",
-      "Снесла {var3} {var4}, не простое - золотое",
-      "- {var1} бил, бил - не разбил",
-      "- {var2} била, била - не разбила",
-      "{var5} бежала, {var6} задела, {var4} упало и разбилось.",
-      "{var1} плачет, {var2} плачет, а {var3} кудахчет:","{speach}"
-    ]
-  };
-    
+changeTextBtn.addEventListener("click", function () {
+  span1InputEl.addEventListener("click", function () {
+    span1InputEl.textContent = var1InputEl.target.value;
+  })      
+  })
