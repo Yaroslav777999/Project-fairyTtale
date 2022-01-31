@@ -16,12 +16,13 @@ window.addEventListener('DOMContentLoaded', function () {
     <span class="sded">{var1}</span> плачет, <span class="sbaba">{var2}</span> плачет, а  <span class="schick">{var3}</span> кудахчет:, <span id="sspeech">{speech}</span>
     </div>`);
     changeTextBtn.classList.remove('hidden');
-  },{once: true})
-
-
+    createTextBtn.classList.add('hidden');
+  }, {
+    once: true
+  })
 
   changeTextBtn.addEventListener("click", function () {
-       var1InputEl = document.querySelector('.ded');
+    var1InputEl = document.querySelector('.ded');
     var2InputEl = document.querySelector('.baba');
     var3InputEl = document.querySelector('.chick');
     var4InputEl = document.querySelector('.egg');
@@ -35,14 +36,13 @@ window.addEventListener('DOMContentLoaded', function () {
     span5InputEl = document.querySelector('.smouse');
     span6InputEl = document.querySelector('.stail');
     spanSpeechInputEl = document.querySelector('#sspeech');
-if (var1InputEl.value.length !== 0 & var2InputEl.value.length !== 0) {
-  span1InputEl.textContent = var1InputEl.value;
-  span2InputEl.textContent = var2InputEl.value;
-  span3InputEl.textContent = var3InputEl.value;
-  span4InputEl.textContent = var4InputEl.value;
-  span5InputEl.textContent = var5InputEl.value;
-  span6InputEl.textContent = var6InputEl.value;
-  spanSpeechInputEl.textContent = varSpeechInputEl.value;
-}
-      })
+
+    var1InputEl.value.length !== 0 ? span1InputEl.textContent = var1InputEl.value : "";
+    var2InputEl.value.length !== 0 ? span2InputEl.textContent = var2InputEl.value : "";
+    var3InputEl.value.length !== 0 ? span3InputEl.textContent = var3InputEl.value : "";
+    var4InputEl.value.length !== 0 ? span4InputEl.textContent = var4InputEl.value : "";
+    var5InputEl.value.length !== 0 ? span5InputEl.textContent = var5InputEl.value : "";
+    var6InputEl.value.length !== 0 ? span6InputEl.textContent = var6InputEl.value : "";
+    varSpeechInputEl.value.length !== 0 ? spanSpeechInputEl.textContent = varSpeechInputEl.value : "";
+  })
 })
