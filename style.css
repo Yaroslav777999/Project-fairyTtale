@@ -7,7 +7,7 @@ body {
 .text {
     width: 900px;
     margin: 90px 0 0 90px;
-    font-family: 'FontName';
+    /* font-family: 'FontName'; */
     font-size: 40px;
     color: #552935;
     display: block;
@@ -66,7 +66,8 @@ body {
     margin-left: 20px;
     color: #552935;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'FontName';
+
 }
 
 .btns {
@@ -80,7 +81,7 @@ body {
     height: 100px;
     font-size: 20px;
     color: #552935;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'FontName';
 }
 
 .btn-change {
@@ -89,7 +90,7 @@ body {
     height: 100px;
     font-size: 20px;
     color: #552935;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'FontName';
 }
 
 @font-face {

@@ -1,26 +1,48 @@
 window.addEventListener('DOMContentLoaded', function () {
-  changeTextBtn = document.querySelector('.btn-change');
-  createTextBtn = document.querySelector('.btn-create');
-  textEl = document.querySelector('.text');
-  var1Changed = document.querySelector('#var1');
+  let changeTextBtn = document.querySelector('.btn-change');
+  let createTextBtn = document.querySelector('.btn-create');
+  let textEl = document.querySelector('.text');
+  let var1Changed = document.querySelector('#var1');
 
   createTextBtn.addEventListener("click", function () {
     textEl.insertAdjacentHTML('afterbegin',
       `<div>
-    Жили-были <span id="s1">{var1}</span> да {var2},
-    Была у них {var3},
-    Снесла {var3} {var4}, не простое - золотое,
-    - {var1} бил, бил - не разбил,
-    - {var2} била, била - не разбила,
-    {var5} бежала, {var6} задела, {var4} упало и разбилось.,
-    {var1} плачет, {var2} плачет, а {var3} кудахчет:,{speach}
+    Жили-были <span class="sded">{var1}</span> да <span class="sbaba">{var2}</span>,
+    Была у них <span class="schick">{var3}</span>,
+    Снесла <span class="schick">{var3}</span> <span class="segg">{var4}</span>, не простое - золотое,
+    - <span class="sded">{var1}</span> бил, бил - не разбил,
+    - <span class="sbaba">{var2}</span> била, била - не разбила,
+    <span class="smouse">{var5}</span> бежала, <span class="stail">{var6}</span> задела, <span id="s4">{var4}</span> упало и разбилось.,
+    <span class="sded">{var1}</span> плачет, <span class="sbaba">{var2}</span> плачет, а  <span class="schick">{var3}</span> кудахчет:, <span id="sspeech">{speech}</span>
     </div>`);
-  })
-  var1InputEl = document.querySelector('#var1');
-  span1InputEl = document.querySelector('#s1');
+    changeTextBtn.classList.remove('hidden');
+  },{once: true})
+
+
 
   changeTextBtn.addEventListener("click", function () {
-      span1InputEl.textContent = var1InputEl.value;
-  })
-
+       var1InputEl = document.querySelector('.ded');
+    var2InputEl = document.querySelector('.baba');
+    var3InputEl = document.querySelector('.chick');
+    var4InputEl = document.querySelector('.egg');
+    var5InputEl = document.querySelector('.mouse');
+    var6InputEl = document.querySelector('.tail');
+    varSpeechInputEl = document.querySelector('#speech');
+    span1InputEl = document.querySelector('.sded');
+    span2InputEl = document.querySelector('.sbaba');
+    span3InputEl = document.querySelector('.schick');
+    span4InputEl = document.querySelector('.segg');
+    span5InputEl = document.querySelector('.smouse');
+    span6InputEl = document.querySelector('.stail');
+    spanSpeechInputEl = document.querySelector('#sspeech');
+if (var1InputEl.value.length !== 0 & var2InputEl.value.length !== 0) {
+  span1InputEl.textContent = var1InputEl.value;
+  span2InputEl.textContent = var2InputEl.value;
+  span3InputEl.textContent = var3InputEl.value;
+  span4InputEl.textContent = var4InputEl.value;
+  span5InputEl.textContent = var5InputEl.value;
+  span6InputEl.textContent = var6InputEl.value;
+  spanSpeechInputEl.textContent = varSpeechInputEl.value;
+}
+      })
 })
